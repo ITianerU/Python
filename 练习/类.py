@@ -1,6 +1,6 @@
 class people():
     def say(self):
-        print("hello")
+        print("hello everybody")
 
 xiaowang = people()
 xiaowang.say()
