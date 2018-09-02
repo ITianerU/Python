@@ -24,7 +24,7 @@ print(C.__dict__)
 class AMateClass(type):
     def __new__(cls, name, base, attrs):
         print("我是元类")
-        attrs["name"] = "laoWang"
+        attrs["name"] = "laoli"
         return type.__new__(cls, name, base, attrs)
 class A(object,metaclass=AMateClass):
     pass
