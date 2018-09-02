@@ -26,6 +26,7 @@ class A():
     def __add__(self, other):
         return self._height + other._height
 
+
 a = A(23)
 a()
 print(a)
