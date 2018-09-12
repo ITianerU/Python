@@ -1,0 +1,50 @@
+DEBUG:root:debug
+INFO:root:info
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:root:debug2
+INFO:root:info2
+WARNING:root:warning2
+ERROR:root:error2
+CRITICAL:root:critical2
+DEBUG:root:debug
+INFO:root:info
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:root:debug2
+INFO:root:info2
+WARNING:root:warning2
+ERROR:root:error2
+CRITICAL:root:critical2
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,746->$(levelname)->$(message)
+2018-09-12 20:31:01,747->$(levelname)->$(message)
+2018-09-12 20:31:01,747->$(levelname)->$(message)
+2018-09-12 20:31:01,747->$(levelname)->$(message)
+2018-09-12 20:31:01,747->$(levelname)->$(message)
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,683->$(levelname)s->$(message)s
+2018-09-12 20:31:18,684->$(levelname)s->$(message)s
+2018-09-12 20:31:18,684->$(levelname)s->$(message)s
+2018-09-12 20:31:18,684->$(levelname)s->$(message)s
+2018-09-12 20:31:18,684->$(levelname)s->$(message)s
+2018-09-12 20:31:51,362->DEBUG->debug
+2018-09-12 20:31:51,362->INFO->info
+2018-09-12 20:31:51,362->WARNING->warning
+2018-09-12 20:31:51,363->ERROR->error
+2018-09-12 20:31:51,363->CRITICAL->critical
+2018-09-12 20:31:51,363->DEBUG->debug2
+2018-09-12 20:31:51,363->INFO->info2
+2018-09-12 20:31:51,363->WARNING->warning2
+2018-09-12 20:31:51,363->ERROR->error2
+2018-09-12 20:31:51,363->CRITICAL->critical2

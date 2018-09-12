@@ -1,0 +1,2 @@
+2018-09-12 20:21:36,133 - ERROR - LoggerTest.py[:29] - error message
+2018-09-12 20:21:36,133 - CRITICAL - LoggerTest.py[:30] - critical message
