@@ -6,7 +6,7 @@ nodes = root.getiterator()
 for node in nodes:
     print(node.tag,"=",node.text)
 print("*"*20)
-#获取查询到的第一个节点的子节点
+#获取查询到的第一个节点
 ele_person = root.find("person")
 for node in ele_person:
     print(node.tag,"=",node.text)
