@@ -1,0 +1,13 @@
+<people>
+    <person name="laowang~~~~~~~~">
+        <name>laowang~~~~~~~~</name>
+        <age>23</age>
+    </person>
+    <person name="laoli~~~~~~~~">
+        <name>laoli~~~~~~~~</name>
+        <age>23</age>
+    </person>
+    <dog>
+        <name>xiaobai</name>
+    <age age="3">3</age></dog>
+</people>
