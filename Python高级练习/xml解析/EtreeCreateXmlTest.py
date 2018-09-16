@@ -1,7 +1,6 @@
 #使用etree创建xml
 import xml.etree.ElementTree as xee
 
-
 toy = xee.Element("toy")
 car = xee.Element("car")
 # car = xee.SubElement(toy,"car")
@@ -11,3 +10,7 @@ toy.append(car)
 
 xee.dump(toy)
 
+#创建xml文件
+root = xee.ElementTree()
+root._setroot(toy)
+root.write("toy.xml")
