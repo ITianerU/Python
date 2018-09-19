@@ -20,9 +20,9 @@ mail_content = """
 #MIMEText创建一封邮件   html表示发送html格式的文件
 msg = MIMEText(mail_content,"html","utf-8")
 #发件人
-msg["From"] = Header("小峰<3048442663@qq.com>","utf-8")
+msg["From"] = Header("小峰<xxxx@qq.com>","utf-8")
 #收件人
-msg["To"] = Header("小田<1438687182@qq.com>","utf-8")
+msg["To"] = Header("小田<xxxx@qq.com>","utf-8")
 #主题
 msg["Subject"] = Header("pythonMailTest")
 
