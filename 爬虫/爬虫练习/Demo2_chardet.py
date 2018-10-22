@@ -8,4 +8,4 @@ if __name__ == "__main__":
     cs = chardet.detect(html)
     print(cs)
     html = html.decode(cs.get("encoding","utf-8"))
-    print(html)
+    print(html)   
