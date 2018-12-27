@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #第三方应用程序
+    'bootstrap3',
+    #本地应用程序
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +124,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#重定向到登陆页面
+LOGIN_URL = '/users/login/'
+
+#django-bootstrap3设置
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}
