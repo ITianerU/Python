@@ -2,32 +2,105 @@
 def search():
 
     # 创建图
+    # graph = {}
+
+    # graph["start"] = {}
+    # graph["start"]["a"] = 6
+    # graph["start"]["b"] = 2
+    #
+    # graph['a'] = {}
+    # graph['a']['end'] = 1
+    #
+    # graph['b'] = {}
+    # graph['b']['a'] = 3
+    # graph['b']['end'] = 5
+
+    # graph['end'] = {}
+
+    # 创建开销表
+    # costs = {}
+    # costs["a"] = 6
+    # costs["b"] = 2
+    # infinity = float("inf")
+    # costs["end"] = infinity
+
+    # 创建父节点表,记录路径
+    # parents = {}
+    # parents["a"] = "start"
+    # parents["b"] = "start"
+    # parents["end"] = None
+    # =============No .1================
+    # graph = {}
+    #
+    # graph["start"] = {}
+    # graph["start"]["a"] = 5
+    # graph["start"]["b"] = 2
+    #
+    # graph["a"] = {}
+    # graph["a"]["c"] = 4
+    # graph["a"]["d"] = 2
+    #
+    # graph["b"] = {}
+    # graph["b"]["d"] = 7
+    # graph["b"]["a"] = 8
+    #
+    # graph["c"] = {}
+    # graph["c"]["d"] = 6
+    # graph["c"]["end"] = 3
+    #
+    # graph["d"] = {}
+    # graph["d"]["end"] = 1
+    #
+    # graph['end'] = {}
+    #
+    # # 创建开销表
+    # costs = {}
+    # costs["a"] = 5
+    # costs["b"] = 2
+    # infinity = float("inf")
+    # costs["end"] = infinity
+    # costs["c"] = infinity
+    # costs["d"] = infinity
+    #
+    # # 创建父节点表,记录路径
+    # parents = {}
+    # parents["a"] = "start"
+    # parents["b"] = "start"
+    # parents["c"] = None
+    # parents["d"] = None
+    # parents["end"] = None
+
+    # =============No .2================
     graph = {}
 
     graph["start"] = {}
-    graph["start"]["a"] = 6
-    graph["start"]["b"] = 2
+    graph["start"]["a"] = 10
 
-    graph['a'] = {}
-    graph['a']['end'] = 1
+    graph["a"] = {}
+    graph["a"]["b"] = 20
 
-    graph['b'] = {}
-    graph['b']['a'] = 3
-    graph['b']['end'] = 5
+    graph["b"] = {}
+    graph["b"]["c"] = 1
+    graph["b"]["end"] = 30
+
+    graph["c"] = {}
+    graph["c"]["a"] = 1
 
     graph['end'] = {}
 
     # 创建开销表
     costs = {}
-    costs["a"] = 6
-    costs["b"] = 2
+    costs["a"] = 10
     infinity = float("inf")
     costs["end"] = infinity
+    costs["c"] = infinity
+    costs["b"] = infinity
 
     # 创建父节点表,记录路径
     parents = {}
     parents["a"] = "start"
-    parents["b"] = "start"
+    parents["b"] = None
+    parents["c"] = None
     parents["end"] = None
 
     searched = ["start"]
@@ -49,7 +122,14 @@ def search():
         # 将该节点记录
         searched.append(node)
         node = find_lowest_cost_node(costs, searched)
-    return searched
+
+    node = parents["end"]
+    print("end")
+    while node != "start":
+        print(node)
+        node = parents[node]
+    print("start")
+    print("总花费", costs["end"])
 
 def find_lowest_cost_node(costs, searched):
     """
@@ -69,4 +149,5 @@ def find_lowest_cost_node(costs, searched):
 
 
 if __name__ == '__main__':
-    print(search())
+    search()
+
