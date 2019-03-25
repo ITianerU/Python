@@ -9,4 +9,3 @@
 ####
 """
 print(int(input())-len(set(list(map(lambda x: abs(int(x)), input().split(" "))))))
-
